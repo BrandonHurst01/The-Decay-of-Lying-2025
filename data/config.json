@@ -1,9 +1,9 @@
 {
   "id": "ec",
-  "documentName": "<DOCUMENT_NAME>",
-  "iiifManifest": "/<BASE_DIR>/<DOCUMENT_ID>/iiif/manifest.json",
+  "documentName": "The Decay of Lying: A Fluid Text Edition",
+  "iiifManifest": "/The-Decay-of-Lying-2025/Decay_Of_Lying_2025_Fluid/iiif/manifest.json",
   "transcriptionTypes": {
     "transcription": "Transcription"
   },
-  "viewerUrl": "/<BASE_DIR>"
+  "viewerUrl": "/The-Decay-of-Lying-2025"
 }
