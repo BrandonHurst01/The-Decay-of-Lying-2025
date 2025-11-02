@@ -5,33 +5,27 @@ on:
     branches:
       - main
 
-permissions:
-  contents: write  # 👈 Required for deployment
-
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Check out
         uses: actions/checkout@v4
-
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
           node-version: 22
-
       - name: Build
         run: |
-          npm ci
+          npm i
           npm run build
-
+      # see https://www.seanmcp.com/articles/fix-missing-astro-files-on-github-pages/
       - name: Add Jekyll ignore
         run: touch ./dist/.nojekyll
-
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: dist
           clean: true
-          token: ${{ secrets.GITHUB_TOKEN }}  # 👈 Built-in token, no setup needed
+          folder: ./dist
+          token: ${{ secrets.GITHUB_TOKEN }}
