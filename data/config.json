@@ -3,7 +3,8 @@
   "documentName": "The Decay of Lying: A Fluid Text Edition",
   "iiifManifest": "/The-Decay-of-Lying-2025/Decay_Of_Lying_2025_Fluid/iiif/manifest.json",
   "transcriptionTypes": {
-    "folio01_fluid": "folio01_fluid",
+  "Fluid_Reading_Text": " Fluid Reading Text ", 
+  "folio01_fluid": "folio01_fluid",
 	"folio02_fluid": "folio02_fluid",
 	"folio03_fluid": "folio03_fluid",
 	"folio04_fluid": "folio04_fluid",
