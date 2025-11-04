@@ -11,9 +11,15 @@ import { getUrl } from '../util/path';
     <link rel="icon" type="image/x-icon" href={getUrl('ec_logo.svg')} />
     <title>Reading Text</title>
     <style>
-  body {
-    margin: 5;
+  /* Center only heading elements (h1–h3, adjust as needed) */
+  h1, h2, h3 {
     text-align: center;
+  }
+
+  /* Regular body text with margins and left alignment */
+  body {
+    margin: 40px 80px; /* top/bottom 40px, left/right 80px */
+    text-align: left;
   }
 
   .deletion {
@@ -81,7 +87,7 @@ import { getUrl } from '../util/path';
                      <hi change="#StC" hand="#comp" rend="small-caps">--</hi></span></span><span class="deletion">
                   <hi change="#StC" hand="#comp" rend="small-caps">Cyril </hi>
                   <hi change="#StC" hand="#comp" rend="italic">and </hi>
-                  <hi change="#StBa" rend="small-caps">Vivian.</hi></span><span class="deletion"><br></span></h1><note rend="small">1.</note> 
+                  <hi change="#StBa" rend="small-caps">Vivian.</hi></span><span class="deletion"></span></h1><note rend="small"> 1</note><br>
             				
             <sp who="#StC">
                					
