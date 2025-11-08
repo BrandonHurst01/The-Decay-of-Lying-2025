@@ -11,7 +11,7 @@ import { getUrl } from "../util/path";
     <main class="container">
         <h1>Critical Introduction</h1>
         <h2>by Brandon Hurst</h2>
-        <h3>About the Edition</h3>
+         <h3 id="about-the-edition">About the Edition <a href="#about-the-edition" class="anchor">¶</a></h3>
         <p>
             In this section, I plan to introduce the editiorial policies and guiding philosophies that informed the assembly of the "Fluid Text" edition of Oscar Wilde's "The Decay of Lying."
         </p> 
@@ -35,9 +35,9 @@ import { getUrl } from "../util/path";
         <p>
             Articulation of the significance and stakes of this type of scholarship (and this edition in particular). What can we learn from taking up this approach/edition as scholars/researchers, its pedagogical applications, etc.  
         </p>
-        <h3>Using the Edition</h3>
+        <h3 id="using-the-edition">Using the Edition <a href="#using-the-edition" class="anchor">¶</a></h3>
         <p>
-            The "EditionCrafter" view features a side by side visual of encoded and zonded iiif images of the <i>Akron</i> MS and transcriptions and variants of the corresponding portion of the essay. Readers can switch between the five different encoded versions of the text from the dropdown menu at the top right of the viewer. These versions are:</p>
+            The "EditionCrafter" view features a side by side visual of encoded and zoned iiif images of the <i>Akron</i> MS and transcriptions and variants of the corresponding portion of the essay. Readers can switch between the five different encoded versions of the text from the dropdown menu at the top right of the viewer. These versions are:</p>
 <p>            <b>Folio # Diplomatic Transcription:</b> A Diplomatic Transcription of the <i>Akron</i> MS, which also includes in its display deleted or altered text present in the <i>Berg</i> Manuscripts housed at the New York Public Library.</p>
 <p>            <b>Folio # Nineteenth Century:</b> The Version Published in the periodical publication <i>Nineteenth Century</i>, with all MS, Editor, and Typesetter implemented alterations tracked.</p>
 <p>            <b>Folio # Intentions 1891:</b> The 1891 <i>Intentions</i> edition, which tracks changes introduced following its periodical publication in 1889.</p>
@@ -52,18 +52,20 @@ import { getUrl } from "../util/path";
         </p>
         <p>
             For ease of access and general information, the change encoding stated in TEI header information is included here:</p>
-<p>                            change xml:id="StA": Stage A: Early drafts</p>
-<p>                            change xml:id="StAb": Stage Ab: Variants extent in incomplete holograph held in the New York Public Library's Berg collection</p>
-<p>                            change xml:id="StB": Stage B: Faircopy manuscript delivered to the<i>The Nineteenth Century</i>. Herman Meuhlstein Collection. University of Akron.</p>
-<p>                            change xml:id="StBa": Stage Ba: Ink revisions, in Wilde's hand, the Akron Manuscript</p>
-<p>                            change xml:id="StBb": Stage Bb: Pencil revisions in Wilde's hand</p>
-<p>                            change xml:id="StC": Stage C: Corrections and changes to Stage B text by the compositors or editors of <i>The Nineteenth Century.</i></p>
-<p>                            change xml:id="StD": Stage D: Revisions made between <i>NC </i>and 1891 <i>Intentions</i></p>
-<p>                            change xml:id="StE": Stage E: Revisions introduced between 1891 and 1894 editions of <i>Intentions</i></p>
+<p><ul>
+  <li>change xml:id="StA": Stage A: Early drafts</li>
+  <li>change xml:id="StAb": Stage Ab: Variants extant in incomplete holograph held in the New York Public Library's Berg Collection</li>
+  <li>change xml:id="StB": Stage B: Faircopy manuscript delivered to <i>The Nineteenth Century</i>. Herman Meuhlstein Collection, University of Akron.</li>
+  <li>change xml:id="StBa": Stage Ba: Ink revisions, in Wilde's hand, in the Akron Manuscript</li>
+  <li>change xml:id="StBb": Stage Bb: Pencil revisions in Wilde's hand</li>
+  <li>change xml:id="StC": Stage C: Corrections and changes to Stage B text by the compositors or editors of <i>The Nineteenth Century</i></li>
+  <li>change xml:id="StD": Stage D: Revisions made between <i>NC</i> and the 1891 <i>Intentions</i></li>
+  <li>change xml:id="StE": Stage E: Revisions introduced between the 1891 and 1894 editions of <i>Intentions</i></li>
+</ul></p>
         <p>
             There are a select few Stage C changes which have not been assigned a "hand" attribute. These are changes in diction and phrasing that are not present as revisions to the MS but have been implemented in the 1889 published text.
         </p>
-        <h3>Analytical Introduction</h3>
+        <h3 id="analytical-introduction">Analytical Introduction <a href="#analytical-introduction" class="anchor">¶</a></h3>
         <p>
             In Progress. . . 
         </p>
@@ -104,6 +106,24 @@ import { getUrl } from "../util/path";
   }
 
   body {
-    margin: 0;
+    margin: 6;
+    font-size: 16px;
+  }
+
+  /* Make h3 anchors appear only when hovering over the heading */
+  h3 {
+    position: relative;
+  }
+
+  h3 .anchor {
+    opacity: 0;
+    text-decoration: none;
+    margin-left: 6px;
+    font-weight: normal;
+    color: inherit;
+  }
+
+  h3:hover .anchor {
+    opacity: 1;
   }
 </style>
