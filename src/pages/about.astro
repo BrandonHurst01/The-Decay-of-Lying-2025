@@ -119,11 +119,16 @@ import { getUrl } from "../util/path";
     padding-right: clamp(16px, 4vw, 48px);
   }
 
-  /* Remove padding from Navbar */
-  nav, Navbar {
-    margin: 0;
-    padding: 0;
-    width: 100%;
+   nav,
+  Navbar,
+  header,
+  .navbar,
+  #navbar {
+    margin: 0 !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    background: inherit !important;
   }
 
   body {
