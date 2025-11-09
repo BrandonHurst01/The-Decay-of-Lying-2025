@@ -119,17 +119,18 @@ import { getUrl } from "../util/path";
     padding-right: clamp(16px, 4vw, 48px);
   }
 
-   nav,
-  Navbar,
-  header,
-  .navbar,
-  #navbar {
-    margin: 0 !important;
-    padding: 0 !important;
-    border-radius: 0 !important;
-    box-shadow: none !important;
-    background: inherit !important;
-  }
+   /* Remove background, spacing, borders, shadow from Navbar */
+Navbar, 
+nav, 
+.navbar, 
+header[role="banner"] {
+  margin: 0 !important;
+  padding: 0 !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
 
   body {
     font-size: 17px;
