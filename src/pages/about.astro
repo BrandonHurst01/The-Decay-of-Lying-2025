@@ -111,11 +111,19 @@ import { getUrl } from "../util/path";
   </body>
 </html>
 <style>
+  /* Main content container keeps responsive readable margins */
   main.container {
     max-width: 1200px;
     margin: auto;
     padding-left: clamp(16px, 4vw, 48px);
-  padding-right: clamp(16px, 4vw, 48px);
+    padding-right: clamp(16px, 4vw, 48px);
+  }
+
+  /* Remove padding from Navbar */
+  nav, Navbar {
+    margin: 0;
+    padding: 0;
+    width: 100%;
   }
 
   body {
@@ -124,7 +132,7 @@ import { getUrl } from "../util/path";
     line-height: 1.33;
   }
 
-  /* Make h3 anchors appear only when hovering over the heading */
+  /* Anchor styling for H3 */
   h3 {
     position: relative;
   }
@@ -138,6 +146,23 @@ import { getUrl } from "../util/path";
   }
 
   h3:hover .anchor {
+    opacity: 1;
+  }
+
+  /* Duplicate the same behavior for H1 */
+  h1 {
+    position: relative;
+  }
+
+  h1 .anchor {
+    opacity: 0;
+    text-decoration: none;
+    margin-left: 8px; /* slightly more spacing looks balanced on large headers */
+    font-weight: normal;
+    color: inherit;
+  }
+
+  h1:hover .anchor {
     opacity: 1;
   }
 </style>
