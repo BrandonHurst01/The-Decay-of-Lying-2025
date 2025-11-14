@@ -903,7 +903,7 @@ import { getUrl } from '../util/path';
                					
                <p>
                   <pb facs="#f029">f.28</pb>
-                  <milestone facs="#f029_z000" n="28" unit="folio_number"></milestone>
+                  <milestone facs="#f029_z000" n="28" unit="folio_number"></milestone><br>
                   <milestone facs="#f029_z001" unit="bracket"></milestone>
                   <hi change="#StB" facs="#f029_z002" hand="#Wilde" rend="underline">V</hi><span class="deletion">
                      <hi change="#StB" facs="#f029_z002" hand="#Wilde" rend="underline">ivian</hi></span><span class="addition">
@@ -2676,5 +2676,10 @@ import { getUrl } from '../util/path';
 <style>
   body {
     margin: 0;
+  }
+  pb {
+    font-size: 0.9em;     /* slightly smaller than surrounding text */
+    line-height: 1.4em;   /* added line spacing */
+    display: inline-block; /* optional: ensures spacing applies cleanly */
   }
 </style>
