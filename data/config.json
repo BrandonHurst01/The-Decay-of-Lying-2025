@@ -3,6 +3,7 @@
   "documentName": "The Decay of Lying: A Fluid Text Edition",
   "iiifManifest": "/The-Decay-of-Lying-2025/Decay_Of_Lying_2025_Fluid/iiif/manifest.json",
   "transcriptionTypes": {
+	"Fluid_Reading_Text": "Fluid Reading Text",
   	"folio01_diplo": "Folio 1 Diplomatic Transcription",
 	"folio01_fluid": "Folio 1 Fluid",
 	"folio01_intentions1891": "Folio 1 Intentions 1891",
